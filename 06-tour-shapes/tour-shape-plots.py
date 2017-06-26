@@ -507,10 +507,11 @@ def heart_tour_func(): return heart_tour
 #         meta.add_text('Description', tour)
 #         im.save(filename, 'PNG', pnginfo=meta)
 
-with open('tours-random-walk.txt') as f:
+# with open('tours-random-walk.txt') as f:
+with open('samples.txt') as f:
     for i, tour_s in enumerate(f.readlines()):
         tour = tour_s.strip()
-        filename = 'tour-{:03}-s{:04}-m{:03}-walk.png'.format(i, len(tour), len(mistake_positions(trace_tour(tour))))
+        filename = 'sample-tour-{:03}-s{:04}-m{:03}-walk.png'.format(i, len(tour), len(mistake_positions(trace_tour(tour))))
         plot_trace(trace_tour(tour), filename=filename)
         im = Image.open(filename)
         meta = PngImagePlugin.PngInfo()
