@@ -1,0 +1,48 @@
+sto a 1
+set b 0
+dec a
+jpz a 42
+inc a
+cpy a c
+set b 0
+dec c
+jpz b 3
+dec b
+jmp 2
+inc b
+jpz c 2
+jmp -6
+jpz b 11
+cpy a b
+jpz b 6
+dec b
+inc c
+inc c
+inc c
+jmp -5
+inc c
+cpy c a
+jmp 12
+set c 0
+set b 0
+dec a
+jpz b 4
+dec b
+inc c
+jmp 2
+inc b
+jpz a 2
+jmp -7
+cpy c a
+cpy a b
+ld c 1
+jpz c 5
+jpz b 5
+dec b
+dec c
+jmp -4
+sto a 1
+jmp -42
+ld a 1
+set c 0
+sto c 1
