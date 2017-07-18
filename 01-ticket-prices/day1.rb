@@ -15,6 +15,6 @@ def value(holiday)
 end
 
 part1 = affordable_holidays(holidays).length
-part2 = affordable_holidays(holidays).max_by {|h| value h}[0]
+part2 = affordable_holidays(holidays).max_by {|h| value h}.first
 
 puts "Part 1: #{part1}\nPart 2: #{part2}"
