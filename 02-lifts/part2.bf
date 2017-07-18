@@ -1,3 +1,18 @@
+set cell 1 to 61         # exit
+set cell 2 to 94 minus 61=33   # up
+set cell 3 to 118 minus 94=24  # down
+
+cell 5 for currently at an exit: 1 if at an exit 0 otherwise
+
+set cell 6 to 0 (current level)
+set cell 7 to  for height above ground min zero
+set cell 8 to 0 (highest exit)
+cell 9 for input
+cell 10 for whether input has been dealt with: 0 for yes 1 for no
+cell 11 for whether dealt with the height above zero cell
+reserve cell 12 and higher for scratch
+
+
 >+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++>+++++++++++++++++++++++++++++++++>++++++++++++++++++++++++
 
 

@@ -276,6 +276,7 @@ def evaluate(code, inp=None, debug=False, execution_limit=0):
                 break
     except EOFError:
         pass
+    print(execution_count)
     return cells, codeptr, cellptr, outputs
 
 
