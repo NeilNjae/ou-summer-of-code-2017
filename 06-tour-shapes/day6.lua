@@ -58,7 +58,7 @@ end
 
 function positions(trace)
   local psns = {}
-  for i, p in ipairs(trace) do
+  for _, p in ipairs(trace) do
     psns[p.x .. ':' .. p.y] = true
   end
   return psns
@@ -67,7 +67,7 @@ end
 
 function valid(trace)
   local psns = 1
-  for k, v in pairs(positions(trace)) do
+  for _, _ in pairs(positions(trace)) do
     psns = psns + 1
   end
   return trace[#trace].x == 0 and trace[#trace].y == 0 and psns == #trace
@@ -85,7 +85,7 @@ end
 
 function valid_tours(tours)
   local valids = {}
-  for i, t in ipairs(tours) do
+  for _, t in ipairs(tours) do
     if valid(trace_tour(t)) then
       table.insert(valids, t)
     end
@@ -96,7 +96,7 @@ end
 
 function steps_total(tours)
   local steps = 0
-  for i, t in ipairs(tours) do
+  for _, t in ipairs(tours) do
     steps = steps + #t
   end
   return steps
@@ -105,7 +105,7 @@ end
 
 function trace_distances(tours)
   local tds = {}
-  for i, tour in ipairs(tours) do
+  for _, tour in ipairs(tours) do
     local t = trace_tour(tour)
     local l1 = math.abs(t[#t].x) + math.abs(t[#t].y)
     local l1s = tds[l1] or {}
@@ -121,8 +121,8 @@ function merge_tours(tour_distances)
   for d1, t1s in pairs(tour_distances) do
     for d2, t2s in pairs(tour_distances) do
       if d1 ~= 0 and d2 ~= 0 and math.abs(d1 - d2) <= 1 then
-        for k, t1 in ipairs(t1s) do
-          for l, t2 in ipairs(t2s) do
+        for _, t1 in ipairs(t1s) do
+          for _, t2 in ipairs(t2s) do
             if t1 ~= t2 then
               local t12 = t1 .. t2
               if valid(trace_tour(t12)) then
@@ -148,7 +148,7 @@ end
 
 function show_trace(trace)
   local stour = ''
-  for i, s in ipairs(trace) do
+  for _, s in ipairs(trace) do
     stour = stour .. '; ' .. show_step(s)
   end
   return stour
