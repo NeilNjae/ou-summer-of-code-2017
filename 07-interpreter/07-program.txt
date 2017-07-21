@@ -1,4 +1,4 @@
-sto a 1
+cpy a d
 set b 0
 dec a
 jpz a 42
@@ -35,14 +35,14 @@ jpz a 2
 jmp -7
 cpy c a
 cpy a b
-ld c 1
+cpy d c
 jpz c 5
 jpz b 5
 dec b
 dec c
 jmp -4
-sto a 1
+cpy a d
 jmp -42
-ld a 1
+cpy d a
 set c 0
-sto c 1
+set d 0
