@@ -43,3 +43,9 @@ nosetests.xml
 
 # Logs
 *.log
+
+# CSV files, as they have personal data
+data-analysis/*csv
+data-analysis/winners.ipynb
+
+
