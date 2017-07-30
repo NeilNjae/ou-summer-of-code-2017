@@ -1,0 +1,41 @@
+graph w {
+
+
+hush -- bush;
+lush -- gush;
+rush -- gush;
+rush -- rusk;
+mush -- gush;
+bush -- tush;
+rush -- mush;
+rush -- lush;
+lush -- tush;
+tush -- mush;
+rush -- ruse;
+hush -- mush;
+hush -- lush;
+rusk -- ruse;
+tush -- push;
+rush -- rust;
+bush -- gush;
+push -- gush;
+rust -- ruse;
+tush -- gush;
+bush -- mush;
+lush -- push;
+rush -- push;
+lush -- mush;
+bush -- push;
+hush -- push;
+hush -- tush;
+rust -- rusk;
+hush -- rush;
+mush -- push;
+lush -- bush;
+rush -- bush;
+rush -- rash;
+hush -- gush;
+rush -- tush;
+
+
+}
