@@ -50,4 +50,7 @@ nosetests.xml
 data-analysis/*csv
 data-analysis/winners.ipynb
 
-
+# Files related to forum downloads
+data-analysis/*zip
+data-analysis/*export*/
+data-analysis/forum*ipynb
