@@ -46,11 +46,5 @@ nosetests.xml
 # Logs
 *.log
 
-# CSV files, as they have personal data
-data-analysis/*csv
-data-analysis/winners.ipynb
-
-# Files related to forum downloads
-data-analysis/*zip
-data-analysis/*export*/
-data-analysis/forum*ipynb
+# Data analysis directory, as it contains personal data.
+data-analysis/*
